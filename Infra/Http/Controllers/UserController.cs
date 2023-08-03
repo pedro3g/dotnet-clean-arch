@@ -3,8 +3,6 @@ using WindowsService1.UseCases.User;
 
 namespace WindowsService1.Controllers
 {
-
-
   [Route("api/[controller]")]
   [ApiController]
   public class UserController : ControllerBase
