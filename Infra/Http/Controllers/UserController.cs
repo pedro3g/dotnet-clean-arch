@@ -1,19 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
-using WindowsService1.Entities;
+using WindowsService1.UseCases.User;
 
 namespace WindowsService1.Controllers
 {
+
+
   [Route("api/[controller]")]
   [ApiController]
   public class UserController : ControllerBase
   {
-    [HttpGet]
-    public ActionResult<List<User>> Get()
+    private readonly CreateUser createUser;
+
+    public UserController(CreateUser createUser)
     {
-      return Ok(new List<User> {
-        new User { Id = 1, Name = "John Doe", Email = "johndoe@email.com"},
-        new User { Id = 2, Name = "Jane Doe", Email = "johndoe@email.com"}
-      });
+      this.createUser = createUser;
+    }
+
+    [HttpPost]
+    public ActionResult<Entities.User> Post()
+    {
+      return this.createUser.Handle();
     }
   }
 }
