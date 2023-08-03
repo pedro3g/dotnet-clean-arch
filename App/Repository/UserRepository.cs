@@ -9,6 +9,6 @@ namespace WindowsService1.Repository
     public abstract User Find(int id);
     public abstract List<User> List();
     public abstract User Update(int id, User entity);
-    public abstract User FindByEmail(string email);
+    public abstract User? FindByEmail(string email);
   }
 }

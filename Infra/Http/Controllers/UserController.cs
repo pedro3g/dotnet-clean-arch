@@ -17,7 +17,15 @@ namespace WindowsService1.Controllers
     [HttpPost]
     public ActionResult<Entities.User> Post()
     {
-      return this.createUser.Handle();
+      try
+      {
+        Entities.User user = createUser.Handle();
+        return Ok(user);
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(new { message = ex.Message });
+      }
     }
   }
 }

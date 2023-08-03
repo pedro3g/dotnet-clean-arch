@@ -1,4 +1,5 @@
 using WindowsService1.UseCases.User;
+using WindowsService1.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<CreateUser>();
+builder.Services.AddScoped<UserRepository, UserSqliteRepository>();
 
 var app = builder.Build();
 
