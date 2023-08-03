@@ -1,0 +1,96 @@
+# Directories
+bin/
+obj/
+logs/
+node_modules/
+__pycache__/
+.vscode/
+.idea/
+*.sln.iml
+
+# Build files
+*.dll
+*.pdb
+*.exe
+*.cache
+*.suo
+*.user
+*.log
+*.vs/
+*.bak
+
+# Temporary files
+*.tmp
+*.TMP
+*.DS_Store
+
+# Visual Studio specific files
+*.csproj.user
+*.userprefs
+*.app.config
+*.vsconfig
+*.suo
+*.sln.docstates
+*.user
+
+# Generated dependencies and packages
+packages/
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn/
+pnpify/
+.pnp.js
+
+# Logs and log files
+*.log
+log.txt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test files and directories
+TestResults/
+[Tt]est[Rr]esult*/
+[Bb]in/
+[Oo]bj/
+
+# Code analysis files
+*.VisualState.xml
+*.NavData
+*.CodeModel
+*.DotSettings
+.coverage
+*.opencover.xml
+*.dotCover
+*.csproj.nuget.cache
+
+# MSBuild files
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# NuGet package files
+*.nupkg
+**/packages/*
+*.cache
+*.nupkg.sha512
